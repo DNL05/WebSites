@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="principal.master.cs" Inherits="principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>UDEO GUASAVE</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <section id="encabezado">
+            <h1 class="page-header">UNIVERCIDAD DE OCCIDENTE<small>"La gran univercidad"</small></h1>
+            <h3></h3>
+        </section>
+        <nav>
+            <p>INICIO - VISION - MISION - ALUMNOS - CONTACTO </p>
+        </nav>
+        <section>
+            <asp:ContentPlaceHolder id="Contenido" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </section>
+        <footer>
+            <p>Todos los derechos reervados &copy; 2014</p>
+        </footer>
+    </div>
+    </form>
+</body>
+</html>
